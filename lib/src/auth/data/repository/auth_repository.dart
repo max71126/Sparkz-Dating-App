@@ -20,8 +20,6 @@ class AuthRepository {
   ResultFuture<User> signup(SignupEvent event) async {
     try {
       final response = await _authRemoteDataSourceImpl.createUser(event);
-      // var token = jsonEncode(response.data['user']['token']);
-      // await LocalDataStorage.instance.setToken(token);
       log('SIGNUP REPO SUCCESSFULL');
       return Right(User.fromJson(response.data['user']));
     } catch (error) {

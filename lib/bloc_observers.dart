@@ -32,6 +32,5 @@ class AppBlocObserver extends BlocObserver {
   @override
   void onClose(BlocBase<dynamic> bloc) {
     super.onClose(bloc);
-    // debugPrint('Closed ${bloc.runtimeType}');
   }
 }
