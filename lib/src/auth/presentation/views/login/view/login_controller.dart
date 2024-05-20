@@ -5,7 +5,6 @@ class LoginScreen extends StatefulWidget {
   static const String name = 'login';
   const LoginScreen({super.key});
 
-  // final bool canPop;
   @override
   State<LoginScreen> createState() => LoginController();
 }
